@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Foundation - Restoring Sight, Transforming Lives</title>
+    <meta name="description" content="Charity foundation providing free eye care treatment to children, elderly, and communities in East Africa through orphanages, schools, churches, and mosques.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        secondary: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- Navigation -->
+    <script src="components/navbar.js"></script>
+    <vision-navbar></vision-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/5.jpeg" alt="Children smiling" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-800/80 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-6 py-20">
+            <div class="max-w-3xl">
+                <div> </div>
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white mb-6 animate-fade-in-up">
+                    <i data-feather="heart" class="w-4 h-4 text-secondary-400"></i>
+                    <span class="text-sm font-medium">Non-Profit Organization Serving East Africa</span>
+                </div>
+                
+                <h1 class="font-serif text-5xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+                    Restoring Sight,<br>
+                    <span class="text-secondary-400">Transforming Lives</span>
+                </h1>
+                
+                <p class="text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed animate-fade-in-up" style="animation-delay: 0.2s;">
+                    We bring comprehensive eye care to the most vulnerable communities across East Africa—orphanages, schools, churches, mosques, and elderly care centers.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <a href="#donate" class="inline-flex items-center gap-2 px-8 py-4 bg-secondary-500 hover:bg-secondary-600 text-white font-semibold rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-secondary-500/30">
+                        <i data-feather="heart" class="w-5 h-5"></i>
+                        Donate Now
+                    </a>
+                    <a href="#programs" class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-full transition-all border border-white/30">
+                        <i data-feather="play-circle" class="w-5 h-5"></i>
+                        Our Programs
+                    </a>
+                </div>
+
+                <!-- Stats Preview -->
+                <div class="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/20 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div>
+                        <div class="text-3xl font-bold text-white counter" data-target="15000">0</div>
+                        <div class="text-sm text-slate-300">Eyes Treated</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white counter" data-target="120">0</div>
+                        <div class="text-sm text-slate-300">Communities Served</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white counter" data-target="12">0</div>
+                        <div class="text-sm text-slate-300">Years of Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
+            <i data-feather="chevron-down" class="w-6 h-6"></i>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary-100 rounded-full -z-10"></div>
+                    <img src="images/12.jpeg" alt="Eye examination" class="rounded-2xl shadow-2xl w-full object-cover">
+                    
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden md:block">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary-600">
+                                <i data-feather="eye" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-800">Vision First</div>
+                                <div class="text-sm text-slate-500">Our Core Mission</div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600">Every child deserves to see the world clearly. Every elder deserves dignity through sight.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="inline-block px-4 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-semibold mb-4">
+                        Our Mission
+                    </div>
+                    <h2 class="font-serif text-4xl font-bold text-slate-900 mb-6">
+                        Bringing Clarity to Those Who Need It Most
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        In East Africa, thousands of children and elderly suffer from preventable blindness and vision impairment due to lack of access to basic eye care. We bridge this gap by bringing mobile clinics directly to orphanages, schools, religious centers, and communities.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-feather="check" class="w-4 h-4 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Free Eye Screenings</h4>
+                                <p class="text-slate-600 text-sm">Comprehensive vision tests for all ages using modern portable equipment</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-feather="check" class="w-4 h-4 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Prescription Glasses</h4>
+                                <p class="text-slate-600 text-sm">Custom-fitted eyewear distributed on-site at no cost to recipients</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-feather="check" class="w-4 h-4 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Cataract Surgeries</h4>
+                                <p class="text-slate-600 text-sm">Life-changing operations arranged for severe cases in partner hospitals</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#about" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+                        Learn More About Us
+                        <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block px-4 py-1 rounded-full bg-secondary-100 text-secondary-800 text-sm font-semibold mb-4">
+                    Where We Work
+                </div>
+                <h2 class="font-serif text-4xl font-bold text-slate-900 mb-4">
+                    Reaching Every Corner of the Community
+                </h2>
+                <p class="text-lg text-slate-600">
+                    From urban mosques to rural orphanages, we bring vision care to diverse communities across Kenya, Tanzania, Uganda, and Rwanda.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Orphanages -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/children home.jpg" alt="Children in orphanage" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
+                            <i data-feather="home" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Children's Orphanages</h3>
+                        <p class="text-slate-600 text-sm mb-4">Providing pediatric eye care and corrective lenses to vulnerable children without parental care.</p>
+                        <div class="flex items-center text-primary-600 text-sm font-semibold">
+                            <span>50+ Homes Served</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schools -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/26 (51).jpeg" alt="School children" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center text-secondary-600 mb-4">
+                            <i data-feather="book-open" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Public Schools</h3>
+                        <p class="text-slate-600 text-sm mb-4">Vision screening programs ensuring students can see the blackboard and succeed academically.</p>
+                        <div class="flex items-center text-secondary-600 text-sm font-semibold">
+                            <span>75+ Schools Reached</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Religious Centers -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/11.jpeg" alt="Community gathering" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
+                            <i data-feather="users" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Churches & Mosques</h3>
+                        <p class="text-slate-600 text-sm mb-4">Partnering with faith communities to host vision clinics for congregants and neighbors.</p>
+                        <div class="flex items-center text-primary-600 text-sm font-semibold">
+                            <span>Interfaith Partnership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elderly Care -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/5.jpeg" alt="Elderly care" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center text-secondary-600 mb-4">
+                            <i data-feather="heart" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-slate-900 mb-2">Elderly Care</h3>
+                        <p class="text-slate-600 text-sm mb-4">Cataract screenings and reading glasses for seniors, restoring independence and dignity.</p>
+                        <div class="flex items-center text-secondary-600 text-sm font-semibold">
+                            <span>3,000+ Seniors Helped</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="py-20 bg-primary-600 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary-400 rounded-full mix-blend-overlay filter blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-4 gap-8 text-center text-white">
+                <div class="p-6">
+                    <div class="text-5xl font-bold font-serif mb-2 counter" data-target="15000">0</div>
+                    <div class="text-primary-100">Eye Screenings</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl font-bold font-serif mb-2 counter" data-target="8500">0</div>
+                    <div class="text-primary-100">Glasses Distributed</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl font-bold font-serif mb-2 counter" data-target="1200">0</div>
+                    <div class="text-primary-100">Cataract Surgeries</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl font-bold font-serif mb-2 counter" data-target="4">0</div>
+                    <div class="text-primary-100">One Country Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl font-bold text-slate-900 mb-4">Stories of Hope</h2>
+                <p class="text-lg text-slate-600">Real stories from those whose lives we've touched</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl relative">
+                    <div class="text-secondary-400 mb-4">
+                        <i data-feather="quote" class="w-8 h-8 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">"For five years, I couldn't see my grandchildren's faces. After the surgery arranged by Vision of Hope, I can finally see them smile. It's a miracle."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://static.photos/people/200x200/12" alt="Grace" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Grace Mbilinyi</div>
+                            <div class="text-sm text-slate-500">36, Tanzanian</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl relative">
+                    <div class="text-secondary-400 mb-4">
+                        <i data-feather="quote" class="w-8 h-8 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">"I was failing school because I couldn't read the board. The glasses they gave me changed everything. Now I'm top of my class!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://static.photos/people/200x200/25" alt="David" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">David Lungwa</div>
+                            <div class="text-sm text-slate-500">12, Tanzanian</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl relative">
+                    <div class="text-secondary-400 mb-4">
+                        <i data-feather="quote" class="w-8 h-8 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">"As an imam, I watch our community benefit greatly when the clinic visits our mosque. It's true humanitarian work regardless of faith."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://static.photos/people/200x200/44" alt="Imam" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Imam Hassan</div>
+                            <div class="text-sm text-slate-500">Community Leader, Tanzania</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/5.jpeg" alt="Background" class="w-full h-full object-cover opacity-20">
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20">
+                <div class="text-center mb-10">
+                    <h2 class="font-serif text-4xl font-bold text-white mb-4">Be the Light in Someone's Life</h2>
+                    <p class="text-slate-300 text-lg">Your donation directly funds eye screenings, glasses, and surgeries for those who cannot afford them.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-10">
+                    <button class="donation-amount group relative bg-white/5 hover:bg-secondary-500 border border-white/20 rounded-xl p-6 text-center transition-all duration-300" onclick="selectAmount(25)">
+                        <div class="text-3xl font-bold text-white mb-2">$25</div>
+                        <div class="text-sm text-slate-300 group-hover:text-white">Provides 5 eye screenings</div>
+                        <div class="absolute inset-0 border-2 border-secondary-500 rounded-xl opacity-0 scale-105 transition-all" id="border-25"></div>
+                    </button>
+                    
+                    <button class="donation-amount group relative bg-white/5 hover:bg-secondary-500 border border-white/20 rounded-xl p-6 text-center transition-all duration-300" onclick="selectAmount(50)">
+                        <div class="text-3xl font-bold text-white mb-2">$50</div>
+                        <div class="text-sm text-slate-300 group-hover:text-white">Provides prescription glasses</div>
+                        <div class="absolute inset-0 border-2 border-secondary-500 rounded-xl opacity-0 scale-105 transition-all" id="border-50"></div>
+                    </button>
+                    
+                    <button class="donation-amount group relative bg-white/5 hover:bg-secondary-500 border border-white/20 rounded-xl p-6 text-center transition-all duration-300" onclick="selectAmount(100)">
+                        <div class="text-3xl font-bold text-white mb-2">$100</div>
+                        <div class="text-sm text-slate-300 group-hover:text-white">Funds a cataract surgery</div>
+                        <div class="absolute inset-0 border-2 border-secondary-500 rounded-xl opacity-0 scale-105 transition-all" id="border-100"></div>
+                    </button>
+                </div>
+
+                <form class="space-y-4" onsubmit="handleDonate(event)">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Full Name" required class="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-secondary-500 transition-colors">
+                        <input type="email" placeholder="Email Address" required class="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-secondary-500 transition-colors">
+                    </div>
+                    <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4 border border-white/20">
+                        <span class="text-slate-300">Custom Amount:</span>
+                        <input type="number" id="custom-amount" placeholder="Enter amount" class="flex-1 bg-transparent text-white placeholder-slate-400 focus:outline-none" oninput="clearSelection()">
+                        <span class="text-secondary-400 font-semibold">USD</span>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-secondary-500 hover:bg-secondary-600 text-white font-bold rounded-xl transition-all transform hover:scale-[1.02] shadow-lg shadow-secondary-500/25">
+                        Complete Donation
+                    </button>
+                    <p class="text-center text-slate-400 text-sm">
+                        <i data-feather="lock" class="w-4 h-4 inline mr-1"></i>
+                        Secure encrypted payment. Tax-deductible donation.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <div class="inline-block px-4 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-semibold mb-4">
+                        Get Involved
+                    </div>
+                    <h2 class="font-serif text-4xl font-bold text-slate-900 mb-6">Partner With Us</h2>
+                    <p class="text-lg text-slate-600 mb-8">
+                        Whether you're a medical professional wanting to volunteer, an organization looking to partner, or someone who wants to host a clinic at your location, we'd love to hear from you.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <i data-feather="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-1">Headquarters</h4>
+                                <p class="text-slate-600">Dar es Salaam, Tanzania<br>East Africa Operations Center</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center text-secondary-600 flex-shrink-0">
+                                <i data-feather="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-1">Email Us</h4>
+                                <p class="text-slate-600">opticalcentretz@gmail.com<br>genesisfoundation@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <i data-feather="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-1">Call Us</h4>
+                                <p class="text-slate-600">+255 719 196 462<br>Mon-Fri, 8am-5pm EAT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-50 p-8 rounded-2xl">
+                    <form class="space-y-4" onsubmit="handleContact(event)">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary-500 focus:outline-none transition-colors">
+                            <input type="text" placeholder="Last Name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary-500 focus:outline-none transition-colors">
+                        </div>
+                        <input type="email" placeholder="Email Address" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary-500 focus:outline-none transition-colors">
+                        <select class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary-500 focus:outline-none transition-colors text-slate-600">
+                            <option value="">I want to...</option>
+                            <option value="volunteer">Volunteer as a medical professional</option>
+                            <option value="partner">Partner my organization</option>
+                            <option value="host">Host a clinic at my location</option>
+                            <option value="donate">Make a corporate donation</option>
+                            <option value="other">Other inquiry</option>
+                        </select>
+                        <textarea rows="4" placeholder="Your Message" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary-500 focus:outline-none transition-colors resize-none"></textarea>
+                        <button type="submit" class="w-full py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-all transform hover:scale-[1.02]">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script src="components/footer.js"></script>
+    <vision-footer></vision-footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-4 right-4 bg-slate-800 text-white px-6 py-4 rounded-lg shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-3">
+        <i data-feather="check-circle" class="w-5 h-5 text-secondary-400"></i>
+        <span id="toast-message">Message sent successfully!</span>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
